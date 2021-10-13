@@ -1,0 +1,25 @@
+server:
+  port: 9001
+
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  application:
+    name: provide-order 
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:3000/eureka,http://eureka1:3001/eureka,http://eureka2:3002/eureka
+  instance:
+    instance-id: order-2 
+    prefer-ip-address: true 
+    leaseRenewalIntervalInSeconds: 10
+
+
+
+
+
+
+
